@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/viewAllEntries.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/viewAllEntries",
+      "dest": "/api/viewAllEntries.ts"
+    }
+  ]
+}
